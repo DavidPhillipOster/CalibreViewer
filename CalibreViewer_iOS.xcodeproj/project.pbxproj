@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63D148F62523FFDC000FDA80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D148F52523FFDC000FDA80 /* AppDelegate.m */; };
+		63D148FC2523FFDC000FDA80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D148FB2523FFDC000FDA80 /* ViewController.m */; };
+		63D149012523FFDD000FDA80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D149002523FFDD000FDA80 /* Assets.xcassets */; };
+		63D149042523FFDD000FDA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D149022523FFDD000FDA80 /* LaunchScreen.storyboard */; };
+		63D149072523FFDD000FDA80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D149062523FFDD000FDA80 /* main.m */; };
+		63D149212524037B000FDA80 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D149142524037B000FDA80 /* Item.m */; };
+		63D149222524037B000FDA80 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D149172524037B000FDA80 /* FMDatabaseQueue.m */; };
+		63D149232524037B000FDA80 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D1491A2524037B000FDA80 /* FMDatabaseAdditions.m */; };
+		63D149242524037B000FDA80 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D1491B2524037B000FDA80 /* FMDatabase.m */; };
+		63D149252524037B000FDA80 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D1491F2524037B000FDA80 /* FMDatabasePool.m */; };
+		63D149262524037B000FDA80 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D149202524037B000FDA80 /* FMResultSet.m */; };
+		63D1493525240E55000FDA80 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D1493425240E55000FDA80 /* Engine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63D148F12523FFDC000FDA80 /* CalibreViewer_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalibreViewer_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D148F42523FFDC000FDA80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63D148F52523FFDC000FDA80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63D148FA2523FFDC000FDA80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		63D148FB2523FFDC000FDA80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63D149002523FFDD000FDA80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63D149032523FFDD000FDA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63D149052523FFDD000FDA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D149062523FFDD000FDA80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63D149132524037B000FDA80 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		63D149142524037B000FDA80 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		63D149162524037B000FDA80 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		63D149172524037B000FDA80 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		63D149182524037B000FDA80 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		63D149192524037B000FDA80 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		63D1491A2524037B000FDA80 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		63D1491B2524037B000FDA80 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		63D1491C2524037B000FDA80 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		63D1491D2524037B000FDA80 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		63D1491E2524037B000FDA80 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		63D1491F2524037B000FDA80 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		63D149202524037B000FDA80 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		63D14929252403B0000FDA80 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		63D1493325240E55000FDA80 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		63D1493425240E55000FDA80 /* Engine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		63D149552524CCD5000FDA80 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = CalibreViewer_iOS/README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63D148EE2523FFDC000FDA80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63D148E82523FFDC000FDA80 = {
+			isa = PBXGroup;
+			children = (
+				63D149552524CCD5000FDA80 /* README.md */,
+				63D148F32523FFDC000FDA80 /* CalibreViewer_iOS */,
+				63D148F22523FFDC000FDA80 /* Products */,
+				63D14928252403B0000FDA80 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63D148F22523FFDC000FDA80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63D148F12523FFDC000FDA80 /* CalibreViewer_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63D148F32523FFDC000FDA80 /* CalibreViewer_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				63D148F42523FFDC000FDA80 /* AppDelegate.h */,
+				63D148F52523FFDC000FDA80 /* AppDelegate.m */,
+				63D148FA2523FFDC000FDA80 /* ViewController.h */,
+				63D148FB2523FFDC000FDA80 /* ViewController.m */,
+				63D149002523FFDD000FDA80 /* Assets.xcassets */,
+				63D149022523FFDD000FDA80 /* LaunchScreen.storyboard */,
+				63D149052523FFDD000FDA80 /* Info.plist */,
+				63D149062523FFDD000FDA80 /* main.m */,
+				63D149112524037B000FDA80 /* Common */,
+			);
+			path = CalibreViewer_iOS;
+			sourceTree = "<group>";
+		};
+		63D149112524037B000FDA80 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				63D1493225240E55000FDA80 /* Engine */,
+				63D149122524037B000FDA80 /* Model */,
+				63D149152524037B000FDA80 /* fmdb */,
+			);
+			path = Common;
+			sourceTree = SOURCE_ROOT;
+		};
+		63D149122524037B000FDA80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63D149132524037B000FDA80 /* Item.h */,
+				63D149142524037B000FDA80 /* Item.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63D149152524037B000FDA80 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				63D149162524037B000FDA80 /* FMDatabase.h */,
+				63D149172524037B000FDA80 /* FMDatabaseQueue.m */,
+				63D149182524037B000FDA80 /* FMResultSet.h */,
+				63D149192524037B000FDA80 /* FMDatabasePool.h */,
+				63D1491A2524037B000FDA80 /* FMDatabaseAdditions.m */,
+				63D1491B2524037B000FDA80 /* FMDatabase.m */,
+				63D1491C2524037B000FDA80 /* FMDatabaseQueue.h */,
+				63D1491D2524037B000FDA80 /* FMDB.h */,
+				63D1491E2524037B000FDA80 /* FMDatabaseAdditions.h */,
+				63D1491F2524037B000FDA80 /* FMDatabasePool.m */,
+				63D149202524037B000FDA80 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		63D14928252403B0000FDA80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63D14929252403B0000FDA80 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63D1493225240E55000FDA80 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				63D1493325240E55000FDA80 /* Engine.h */,
+				63D1493425240E55000FDA80 /* Engine.m */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63D148F02523FFDC000FDA80 /* CalibreViewer_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63D1490A2523FFDD000FDA80 /* Build configuration list for PBXNativeTarget "CalibreViewer_iOS" */;
+			buildPhases = (
+				63D148ED2523FFDC000FDA80 /* Sources */,
+				63D148EE2523FFDC000FDA80 /* Frameworks */,
+				63D148EF2523FFDC000FDA80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalibreViewer_iOS;
+			productName = CalibreViewer_iOS;
+			productReference = 63D148F12523FFDC000FDA80 /* CalibreViewer_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63D148E92523FFDC000FDA80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					63D148F02523FFDC000FDA80 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 63D148EC2523FFDC000FDA80 /* Build configuration list for PBXProject "CalibreViewer_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63D148E82523FFDC000FDA80;
+			productRefGroup = 63D148F22523FFDC000FDA80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63D148F02523FFDC000FDA80 /* CalibreViewer_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63D148EF2523FFDC000FDA80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D149042523FFDD000FDA80 /* LaunchScreen.storyboard in Resources */,
+				63D149012523FFDD000FDA80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63D148ED2523FFDC000FDA80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D149222524037B000FDA80 /* FMDatabaseQueue.m in Sources */,
+				63D149212524037B000FDA80 /* Item.m in Sources */,
+				63D148FC2523FFDC000FDA80 /* ViewController.m in Sources */,
+				63D149242524037B000FDA80 /* FMDatabase.m in Sources */,
+				63D148F62523FFDC000FDA80 /* AppDelegate.m in Sources */,
+				63D149252524037B000FDA80 /* FMDatabasePool.m in Sources */,
+				63D149262524037B000FDA80 /* FMResultSet.m in Sources */,
+				63D149072523FFDD000FDA80 /* main.m in Sources */,
+				63D1493525240E55000FDA80 /* Engine.m in Sources */,
+				63D149232524037B000FDA80 /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63D149022523FFDD000FDA80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63D149032523FFDD000FDA80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63D149082523FFDD000FDA80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		63D149092523FFDD000FDA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63D1490B2523FFDD000FDA80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				INFOPLIST_FILE = CalibreViewer_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Calibre-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63D1490C2523FFDD000FDA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				INFOPLIST_FILE = CalibreViewer_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Calibre-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63D148EC2523FFDC000FDA80 /* Build configuration list for PBXProject "CalibreViewer_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63D149082523FFDD000FDA80 /* Debug */,
+				63D149092523FFDD000FDA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63D1490A2523FFDD000FDA80 /* Build configuration list for PBXNativeTarget "CalibreViewer_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63D1490B2523FFDD000FDA80 /* Debug */,
+				63D1490C2523FFDD000FDA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63D148E92523FFDC000FDA80 /* Project object */;
+}

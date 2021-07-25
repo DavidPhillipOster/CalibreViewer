@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63077FD02551EFD2001DF3C9 /* Duplicates.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63077FCE2551EFD2001DF3C9 /* Duplicates.xib */; };
+		630EDB5D20FBBDB40048E663 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 630EDB5C20FBBDB40048E663 /* AppDelegate.m */; };
+		630EDB6020FBBDB40048E663 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 630EDB5F20FBBDB40048E663 /* main.m */; };
+		630EDB6320FBBDB40048E663 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 630EDB6220FBBDB40048E663 /* Document.m */; };
+		630EDB6620FBBDB40048E663 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630EDB6420FBBDB40048E663 /* Document.xib */; };
+		630EDB6820FBBDB40048E663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630EDB6720FBBDB40048E663 /* Assets.xcassets */; };
+		630EDB6B20FBBDB40048E663 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630EDB6920FBBDB40048E663 /* MainMenu.xib */; };
+		63C6C30621C94F8400583AF3 /* DocumentResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6C30521C94F8400583AF3 /* DocumentResponder.m */; };
+		63D03C8025687B5E003AC38A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63D03C8225687B5E003AC38A /* Localizable.strings */; };
+		63D1494D252437B9000FDA80 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D1493D252437B9000FDA80 /* Item.m */; };
+		63D1494E252437B9000FDA80 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D14940252437B9000FDA80 /* FMDatabaseQueue.m */; };
+		63D1494F252437B9000FDA80 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D14943252437B9000FDA80 /* FMDatabaseAdditions.m */; };
+		63D14950252437B9000FDA80 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D14944252437B9000FDA80 /* FMDatabase.m */; };
+		63D14951252437B9000FDA80 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D14948252437B9000FDA80 /* FMDatabasePool.m */; };
+		63D14952252437B9000FDA80 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D14949252437B9000FDA80 /* FMResultSet.m */; };
+		63D14953252437B9000FDA80 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D1494C252437B9000FDA80 /* Engine.m */; };
+		63EE740624EF3D7000A7567B /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63EE740424EF3D7000A7567B /* Preferences.xib */; };
+		63EE740924EF414200A7567B /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EE740824EF414200A7567B /* PreferencesController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63077FCF2551EFD2001DF3C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Duplicates.xib; sourceTree = "<group>"; };
+		630EDB5820FBBDB40048E663 /* CalibreViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalibreViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630EDB5B20FBBDB40048E663 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		630EDB5C20FBBDB40048E663 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		630EDB5F20FBBDB40048E663 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		630EDB6120FBBDB40048E663 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		630EDB6220FBBDB40048E663 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		630EDB6520FBBDB40048E663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		630EDB6720FBBDB40048E663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		630EDB6A20FBBDB40048E663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		630EDB6C20FBBDB40048E663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631DB01B21C630D80080336A /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		63C6C30421C94F8400583AF3 /* DocumentResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentResponder.h; sourceTree = "<group>"; };
+		63C6C30521C94F8400583AF3 /* DocumentResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentResponder.m; sourceTree = "<group>"; };
+		63D03C8125687B5E003AC38A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		63D1493C252437B9000FDA80 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		63D1493D252437B9000FDA80 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		63D1493F252437B9000FDA80 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		63D14940252437B9000FDA80 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		63D14941252437B9000FDA80 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		63D14942252437B9000FDA80 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		63D14943252437B9000FDA80 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		63D14944252437B9000FDA80 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		63D14945252437B9000FDA80 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		63D14946252437B9000FDA80 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		63D14947252437B9000FDA80 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		63D14948252437B9000FDA80 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		63D14949252437B9000FDA80 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		63D1494B252437B9000FDA80 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		63D1494C252437B9000FDA80 /* Engine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		63EE740524EF3D7000A7567B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
+		63EE740724EF414200A7567B /* PreferencesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		63EE740824EF414200A7567B /* PreferencesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		630EDB5520FBBDB40048E663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630EDB4F20FBBDB40048E663 = {
+			isa = PBXGroup;
+			children = (
+				631DB01B21C630D80080336A /* ReadMe.md */,
+				630EDB5A20FBBDB40048E663 /* CalibreViewer */,
+				63D1493A252437B9000FDA80 /* Common */,
+				630EDB5920FBBDB40048E663 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		630EDB5920FBBDB40048E663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630EDB5820FBBDB40048E663 /* CalibreViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		630EDB5A20FBBDB40048E663 /* CalibreViewer */ = {
+			isa = PBXGroup;
+			children = (
+				630EDB5B20FBBDB40048E663 /* AppDelegate.h */,
+				630EDB5C20FBBDB40048E663 /* AppDelegate.m */,
+				630EDB6120FBBDB40048E663 /* Document.h */,
+				630EDB6220FBBDB40048E663 /* Document.m */,
+				63C6C30421C94F8400583AF3 /* DocumentResponder.h */,
+				63C6C30521C94F8400583AF3 /* DocumentResponder.m */,
+				63EE740724EF414200A7567B /* PreferencesController.h */,
+				63EE740824EF414200A7567B /* PreferencesController.m */,
+				630EDB6420FBBDB40048E663 /* Document.xib */,
+				630EDB6720FBBDB40048E663 /* Assets.xcassets */,
+				630EDB6920FBBDB40048E663 /* MainMenu.xib */,
+				63077FCE2551EFD2001DF3C9 /* Duplicates.xib */,
+				63EE740424EF3D7000A7567B /* Preferences.xib */,
+				630EDB6C20FBBDB40048E663 /* Info.plist */,
+				63D03C8225687B5E003AC38A /* Localizable.strings */,
+				630EDB5F20FBBDB40048E663 /* main.m */,
+			);
+			path = CalibreViewer;
+			sourceTree = "<group>";
+		};
+		63D1493A252437B9000FDA80 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				63D1493B252437B9000FDA80 /* Model */,
+				63D1494A252437B9000FDA80 /* Engine */,
+				63D1493E252437B9000FDA80 /* fmdb */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		63D1493B252437B9000FDA80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63D1493C252437B9000FDA80 /* Item.h */,
+				63D1493D252437B9000FDA80 /* Item.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63D1493E252437B9000FDA80 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				63D1493F252437B9000FDA80 /* FMDatabase.h */,
+				63D14940252437B9000FDA80 /* FMDatabaseQueue.m */,
+				63D14941252437B9000FDA80 /* FMResultSet.h */,
+				63D14942252437B9000FDA80 /* FMDatabasePool.h */,
+				63D14943252437B9000FDA80 /* FMDatabaseAdditions.m */,
+				63D14944252437B9000FDA80 /* FMDatabase.m */,
+				63D14945252437B9000FDA80 /* FMDatabaseQueue.h */,
+				63D14946252437B9000FDA80 /* FMDB.h */,
+				63D14947252437B9000FDA80 /* FMDatabaseAdditions.h */,
+				63D14948252437B9000FDA80 /* FMDatabasePool.m */,
+				63D14949252437B9000FDA80 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		63D1494A252437B9000FDA80 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				63D1494B252437B9000FDA80 /* Engine.h */,
+				63D1494C252437B9000FDA80 /* Engine.m */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		630EDB5720FBBDB40048E663 /* CalibreViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630EDB6F20FBBDB40048E663 /* Build configuration list for PBXNativeTarget "CalibreViewer" */;
+			buildPhases = (
+				630EDB5420FBBDB40048E663 /* Sources */,
+				630EDB5520FBBDB40048E663 /* Frameworks */,
+				630EDB5620FBBDB40048E663 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalibreViewer;
+			productName = CalibreViewer;
+			productReference = 630EDB5820FBBDB40048E663 /* CalibreViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		630EDB5020FBBDB40048E663 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					630EDB5720FBBDB40048E663 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 630EDB5320FBBDB40048E663 /* Build configuration list for PBXProject "CalibreViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 630EDB4F20FBBDB40048E663;
+			productRefGroup = 630EDB5920FBBDB40048E663 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				630EDB5720FBBDB40048E663 /* CalibreViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		630EDB5620FBBDB40048E663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63077FD02551EFD2001DF3C9 /* Duplicates.xib in Resources */,
+				63D03C8025687B5E003AC38A /* Localizable.strings in Resources */,
+				630EDB6820FBBDB40048E663 /* Assets.xcassets in Resources */,
+				630EDB6620FBBDB40048E663 /* Document.xib in Resources */,
+				63EE740624EF3D7000A7567B /* Preferences.xib in Resources */,
+				630EDB6B20FBBDB40048E663 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		630EDB5420FBBDB40048E663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D1494D252437B9000FDA80 /* Item.m in Sources */,
+				630EDB6320FBBDB40048E663 /* Document.m in Sources */,
+				63C6C30621C94F8400583AF3 /* DocumentResponder.m in Sources */,
+				63D14950252437B9000FDA80 /* FMDatabase.m in Sources */,
+				63D1494E252437B9000FDA80 /* FMDatabaseQueue.m in Sources */,
+				63D14953252437B9000FDA80 /* Engine.m in Sources */,
+				63EE740924EF414200A7567B /* PreferencesController.m in Sources */,
+				630EDB6020FBBDB40048E663 /* main.m in Sources */,
+				63D14951252437B9000FDA80 /* FMDatabasePool.m in Sources */,
+				63D14952252437B9000FDA80 /* FMResultSet.m in Sources */,
+				630EDB5D20FBBDB40048E663 /* AppDelegate.m in Sources */,
+				63D1494F252437B9000FDA80 /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63077FCE2551EFD2001DF3C9 /* Duplicates.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63077FCF2551EFD2001DF3C9 /* Base */,
+			);
+			name = Duplicates.xib;
+			sourceTree = "<group>";
+		};
+		630EDB6420FBBDB40048E663 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630EDB6520FBBDB40048E663 /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		630EDB6920FBBDB40048E663 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630EDB6A20FBBDB40048E663 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		63D03C8225687B5E003AC38A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63D03C8125687B5E003AC38A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		63EE740424EF3D7000A7567B /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63EE740524EF3D7000A7567B /* Base */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		630EDB6D20FBBDB40048E663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"ANTHDUP=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		630EDB6E20FBBDB40048E663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ANTHDUP=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		630EDB7020FBBDB40048E663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				INFOPLIST_FILE = CalibreViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CalibreViewer",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CalibreViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		630EDB7120FBBDB40048E663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				INFOPLIST_FILE = CalibreViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CalibreViewer",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CalibreViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		630EDB5320FBBDB40048E663 /* Build configuration list for PBXProject "CalibreViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630EDB6D20FBBDB40048E663 /* Debug */,
+				630EDB6E20FBBDB40048E663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630EDB6F20FBBDB40048E663 /* Build configuration list for PBXNativeTarget "CalibreViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630EDB7020FBBDB40048E663 /* Debug */,
+				630EDB7120FBBDB40048E663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 630EDB5020FBBDB40048E663 /* Project object */;
+}

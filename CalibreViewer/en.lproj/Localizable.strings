@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  CalibreViewer
+
+  Created by David Phillip Oster on 11/20/20.
+  Copyright © 2020 David Phillip Oster. Apache 2 license
+*/
+
+"Application ID functions require SQLite 3.7.17" = "Application ID functions require SQLite 3.7.17";
+
+"Computing Duplicate Anthologies" = "Computing Duplicate Anthologies";
+
+"Computing Duplicate First Lines" = "Computing Duplicate First Lines";
+
+"Duplicate Anthologies" = "Duplicate Anthologies";
+
+"Duplicate First Lines" = "Duplicate First Lines";
+
+"Hide Duplicate Anthologies" = "Hide Duplicate Anthologies";
+
+"Hide Duplicate Authors" = "Hide Duplicate Authors";
+
+"Hide Duplicate First Lines" = "Hide Duplicate First Lines";
+
+"NO Duplicate Anthologies" = "NO Duplicate Anthologies";
+
+"NO Duplicate Authors" = "NO Duplicate Authors";
+
+"NO Duplicate First Lines" = "NO Duplicate First Lines";
+
+"Save point functions require SQLite 3.7" = "Save point functions require SQLite 3.7";
+
+"Show Duplicate Anthologies" = "Show Duplicate Anthologies";
+
+"Show Duplicate Authors" = "Show Duplicate Authors";
+
+"Show Duplicate First Lines" = "Show Duplicate First Lines";
+
+
+
+// Button title.
+"Update" = "Update";
+
+
+"UpdateTip" = "An updated database has been fetched and is ready to install.";
