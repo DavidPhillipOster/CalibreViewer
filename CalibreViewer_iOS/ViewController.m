@@ -9,11 +9,17 @@
 
 #import "Engine.h"
 
-@interface ViewController () <EngineDelegate, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating>
+@interface ViewController () <
+  EngineDelegate,
+  UIDocumentInteractionControllerDelegate,
+  UISearchBarDelegate,
+  UISearchControllerDelegate,
+  UISearchResultsUpdating>
 @property(nonatomic) Engine *engine;
 @property(nonatomic) UISearchController *searchController;
 @property(nonatomic) UIProgressView *progressView;
 @property(nonatomic) ItemKind itemKind;
+@property(nonatomic) UIDocumentInteractionController *interactor;
 @property(nonatomic) NSArray<NSString *> *sectionIndexTitles;
 @property(nonatomic) NSArray<NSNumber *> *sectionIndexValues;
 @end
@@ -97,6 +103,41 @@
   [self.tableView reloadData];
 }
 
+/// Return the path of the item's actual document: for example the pdf file. nil if not found.
+- (NSString *)filePathOfItem:(Item *)item {
+  // TODO: write filePathOfItem.
+  return nil;
+}
+
+
+- (void)shareFileAtTableAtIndexPath:(NSIndexPath *)indexPath  {
+  Item *item = nil;
+  if (_itemKind) {
+    Item *group = self.engine.filteredModel[indexPath.section];
+    item = group.children[indexPath.item];
+  } else {
+    item = self.engine.filteredModel[indexPath.item];
+  }
+  NSString *filePath = [self filePathOfItem:item];
+  if (filePath) {
+    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+    [self setInteractor:[UIDocumentInteractionController interactionControllerWithURL:fileURL]];
+    [self.interactor setDelegate:self];
+    CGRect itemRect = [[self.tableView cellForRowAtIndexPath:indexPath] frame];
+    if ( ! [self.interactor presentOpenInMenuFromRect:itemRect inView:self.tableView animated:YES]) {
+      // This probably can't happen, because some apps register to handle any kind of document.
+      UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Unrecognized type", 0)
+                                                                     message:NSLocalizedString(@"No apps for this", 0)
+                                                              preferredStyle:UIAlertControllerStyleAlert];
+      [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"OK", 0)
+                                                style:UIAlertActionStyleDefault
+                                              handler:^(UIAlertAction * action) {
+        [alert dismissViewControllerAnimated:YES completion:nil];
+      }]];
+      [self presentViewController:alert animated:YES completion:nil];
+    }
+  }
+}
 
 #pragma mark -
 
@@ -203,6 +244,7 @@
 // dismiss the soft keyboard when the user taps the table.
 - (void)tableView:(UITableView *)tableView  didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   [self.searchController.searchBar resignFirstResponder];
+  [self shareFileAtTableAtIndexPath:indexPath];
 }
 
 #pragma mark -
@@ -219,6 +261,13 @@
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
   [self.engine setSearchString:searchController.searchBar.text];
+}
+
+#pragma mark -
+
+// Since we retained it in openInCommand, we release it here.
+- (void)documentInteractionControllerDidDismissOpenInMenu:(UIDocumentInteractionController *)controller {
+  [self setInteractor:nil];
 }
 
 @end
