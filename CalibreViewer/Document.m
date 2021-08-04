@@ -66,6 +66,11 @@ static BOOL HasEbookFile(NSString *path) {
   self.outlineView.doubleAction = @selector(doDoubleClick:);
   self.documentResponder.outlineView = self.outlineView;
   windowController.nextResponder = self.documentResponder;
+  // Fix: rows clipped before first resize.
+  CGFloat tableWidth = self.outlineView.frame.size.width;
+  if (32 < tableWidth) {
+    self.outlineView.tableColumns.firstObject.width = tableWidth;
+  }
   [self.outlineView reloadData];
 }
 
